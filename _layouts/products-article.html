@@ -1,0 +1,222 @@
+---
+layout: pages
+---
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-btm-40">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}.jpg" class="img-thumbnail" alt="{{ page.title }}"></mip-img>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-btm-40">
+    <p class="title-3 text-black margin-btm-20">{{ page.title }}</p>
+    <p><i class="fas fa-check-circle"></i> {{ page.features-1 }}</p>
+    <p><i class="fas fa-check-circle"></i> {{ page.features-2 }}</p>{% if page.features-3 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-3 }}</p>{% endif %}{% if page.features-4 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-4 }}</p>{% endif %}{% if page.features-5 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-5 }}</p>{% endif %}{% if page.features-6 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-6 }}</p>{% endif %}{% if page.features-7 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-7 }}</p>{% endif %}{% if page.features-8 == 'wu' %}{% else %}
+    <p><i class="fas fa-check-circle"></i> {{ page.features-8 }}</p>{% endif %}
+  </div>
+</div>
+<div class="row">
+  {{ content }}
+</div>{% if page.video == 'wu' %}{% else %}
+<mip-iframe class="margin-btm-40" layout="fixed" width="1600" height="900" src="https://player.youku.com/embed/{{ page.video }}"></mip-iframe>{% endif %}
+<hr class="margin-btm-20">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>型号</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.model }}</p>
+</div>
+<hr class="margin-btm-20">
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>电压</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.voltage }} V</p>
+</div>
+<hr class="margin-btm-20">{% if page.power == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>功率</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.power }} KW</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.control-method == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>控制方式</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.control-method }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.bobbin-size == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>纱管规格</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.bobbin-size }} MM</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.tape-number == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>卷带条数</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.tape-number }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.tape-width == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>卷带宽度</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.tape-width }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.roll-width == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>卷筒宽度</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.roll-width }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.speed == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>转速</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.speed }} RPM</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.airpre == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>进气压</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.airpre }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.warping-number == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>整经条数</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.warping-number }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.warping-yards == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>整经码数</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.warping-yards }}</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.pan-head-size == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>盘头尺寸</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.pan-head-size }} MM（盘面外径 x 盘头外长）</p>
+</div>
+<hr class="margin-btm-20">{% endif %}{% if page.paper-tube-size == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>纸筒规格</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.paper-tube-size }} MM</p>
+</div>
+<hr class="margin-btm-20">{% endif %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>机械尺寸</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.size }} MM</p>
+</div>
+<hr class="margin-btm-20">{% if page.weight == 'wu' %}{% else %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>重量</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.weight }} KG</p>
+</div>
+<hr class="margin-btm-20">{% endif %}
+<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+  <p class="text-black"><b>产品用途</b></p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+  <p>{{ page.application }}</p>
+</div>
+<hr class="margin-btm-20">{% if page.table == 't1' %}
+<p class="title-3 text-black margin-top-40 margin-btm-30 text-center">不同型号整经机对比</p>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped text-center">
+    <thead>
+      <tr>
+        <th class="text-center">型号</th>
+        <th class="text-center">拉纱条数</th>
+        <th class="text-center">整经条数</th>
+        <th class="text-center">可拉公斤数</th>
+        <th class="text-center">最大码数</th>
+        <th class="text-center">盘头尺寸（盘面外径 x 盘头外长）</th>
+      </tr>
+    </thead>
+    <tbody>{% for post in site.categories["products"] %}{% if post.table == page.table %}
+      <tr>
+        <td><a href="{{ site.url }}{{ post.url }}">{{ post.model }}</a></td>
+        <td>{{ post.yarn-count }}</td>
+        <td>{{ post.warping-yards }}</td>
+        <td>{{ post.kilogram-number }} kg</td>
+        <td>{{ post.max-code-number }} 码</td>
+        <td>{{ post.pan-head-size }} MM</td>
+      </tr>{% endif %}{% endfor %}
+    </tbody>
+  </table>
+</div>{% endif %}{% if page.table == 't2' %}
+<p class="title-3 text-black margin-top-40 margin-btm-30 text-center">不同型号纬纱机对比</p>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped text-center">
+    <thead>
+      <tr>
+        <th class="text-center">型号</th>
+        <th class="text-center">控制方式</th>
+        <th class="text-center">计码</th>
+        <th class="text-center">触摸屏控制</th>
+        <th class="text-center">卸料溜槽</th>
+        <th class="text-center">切断方式</th>         
+        <th class="text-center">可否加装金银线、反光条装置</th>
+        <th class="text-center">纱管尺寸</th>
+      </tr>
+    </thead>
+    <tbody>{% for post in site.categories["products"] %}{% if post.table == page.table %}
+      <tr>
+        <td><a href="{{ site.url }}{{ post.url }}">{{ post.model }}</a></td>
+        <td>{{ post.control-mode }}</td>
+        <td>{{ post.code-number }}</td>
+        <td>{{ post.touch-screen-control }}</td>
+        <td>{{ post.discharge-chute }}</td>
+        <td>电热丝熔断和剪刀切断</td>
+        <td>是</td>
+        <td>{{ page.bobbin-size }} MM</td>
+      </tr>{% endif %}{% endfor %}
+    </tbody>
+  </table>
+</div>{% endif %}{% if page.case == 'wu' %}{% else %}
+<p class="title-3 text-black margin-top-40 margin-btm-30 text-center">客户案例</p>
+<div class="row">{% if page.case == 'three' %}
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-1.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-2.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-3.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>{% endif %}{% if page.case == 'four' %}
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-1.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-2.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-3.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-btm-20">
+    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-case-4.jpg" class="img-thumbnail" alt="{{ page.title }}案例"></mip-img>
+  </div>{% endif %}{% endif %}
+</div>
+{% include products-list.html %}
