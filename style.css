@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 a {
-  color: #dc3545;
+  color: #fabf13;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -22,7 +22,7 @@ a.hover-color, .blog-post-title a:hover, .news-post-cat a:hover {
   transition: all 0.3s ease-in;
 }
 a.hover-color:hover, .blog-post-title a:hover, .news-post-cat a:hover {
-  color: #dc3545;
+  color: #fabf13;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -464,23 +464,23 @@ p {
 .text-indent-2 {
   text-indent: 2em;
 }
-.text-red {
-  color: #dc3545;
+.text-yellow {
+  color: #fabf13;
 }
 .text-black {
   color: #000000;
 }
-.bg-red {
-  background-color: #f8d7da;
+.bg-yellow {
+  background-color: #fff3cd;
 }
 .bg-dark {
   background-color: #f5f5f5;
 }
-.red-heading {
+.yellow-heading {
   width: 30px;
   height: 3px;
   margin-bottom: 20px;
-  background-color: #dc3545;
+  background-color: #fabf13;
 }
 /*breadcrumb*/
 .breadcrumb {
@@ -494,7 +494,7 @@ p {
   display: inline-block;
 }
 .breadcrumb > .active {
-  color: #dc3545;
+  color: #fabf13;
 }
 /*Image*/
 img {
@@ -755,12 +755,12 @@ table th[class*="col-"] {
   padding: 10px 16px;
   line-height: 1.3333333;
 }
-.btn-red {
+.btn-yellow {
   color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #fabf13;
+  border-color: #fabf13;
 }
-.btn-red:hover {
+.btn-yellow:hover {
   color: #fff;
   background-color: #c82333;
   border-color: #bd2130;
