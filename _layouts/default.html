@@ -995,7 +995,7 @@ table th[class*="col-"] {
   content: "\f1d6";
 }
 .fa-phone-volume:before {
-  content: "\f1ac";
+  content: "\f2a0";
 }
 .fa-envelope:before {
   content: "\f0e0";
@@ -1126,9 +1126,9 @@ mip-fixed[type=bottom], mip-fixed[type=top]{overflow: initial;}</style>
             <div class="yellow-heading"></div>
             <p><i class="fas fa-map-marker-alt"></i> {{ site.address }}</p>
             <p><i class="fas fa-phone"></i> <a href="tel:{{ site.tel }}">{{ site.tel }}</a></p>
+            <p><i class="fas fa-phone-volume"></i> <a href="tel:{{ site.service-tel }}">{{ site.service-tel }}</a></p>
             <p><i class="fas fa-mobile-alt"></i> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
             <p><i class="fab fa-qq"></i> <a href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes">{{ site.qq }}</a></p>
-            <p><i class="fas fa-phone-volume"></i> {{ site.fax }}</p>
             <p><i class="fas fa-envelope"></i> {{ site.email }}</p>
             <p><i class="fab fa-weixin"></i> <span on="tap:weixin.toggle" id="btn-open" tabindex="0">{{ site.weixin }}(点击扫码)</span></p>
             <mip-lightbox id="weixin" layout="nodisplay" class="mip-hidden">

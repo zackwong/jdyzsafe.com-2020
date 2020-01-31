@@ -11,7 +11,8 @@ layout: default
     <li>/</li>{% endif %}
     <li class="active">{{ page.title }}</li>
   </ol>
-</div>
+</div>{% if page.layout == 'products-article' %}
+<mip-img src="{{ site.url }}/images/products/bg-{{ page.image }}.jpg" class="img-thumbnail" alt="{{ page.title }}"></mip-img>{% endif %}
 <div class="container">
   {{ content }}
 </div>
