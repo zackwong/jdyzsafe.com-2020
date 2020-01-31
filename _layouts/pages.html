@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="bg-yellow margin-btm-60">
+<div class="bg-yellow">
   <ol class="breadcrumb container">
     <li><a href="{{ site.url }}">首页</a></li>
     <li>/</li>{% if page.layout == 'products-article' %}
@@ -12,7 +12,7 @@ layout: default
     <li class="active">{{ page.title }}</li>
   </ol>
 </div>{% if page.layout == 'products-article' %}
-<mip-img src="{{ site.url }}/images/products/bg-{{ page.image }}.jpg" class="img-thumbnail" alt="{{ page.title }}"></mip-img>{% endif %}
+<mip-img src="{{ site.url }}/images/products/bg-{{ page.image }}.jpg" class="margin-btm-60" alt="{{ page.title }}"></mip-img>{% endif %}
 <div class="container">
   {{ content }}
 </div>
