@@ -1102,26 +1102,25 @@ mip-fixed[type=bottom], mip-fixed[type=top]{overflow: initial;}</style>
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-btm-20 hidden-xs">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 margin-btm-20 hidden-xs">
             <mip-img src="{{ site.url }}/images/assets/jdyzsafe-logo.png" width="165" height="50" alt="金点原子保险柜Logo"></mip-img>
             <p class="text-justify margin-top-10 margin-btm-10">宁波弗雷迪安防科技有限公司</b>，前身为金点原子保险柜事业部，主要产品高安防保险柜、保险箱。主要职能负责金点原子保险柜/箱产品的研发以及销售，包括线上、线下以及出口业。<a data-title="公司简介" href="{{ site.url }}/about/">了解更多</a></p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-btm-20 hidden-xs">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-btm-20 hidden-xs">
             <p class="nav-title">产品中心</p>
             <div class="yellow-heading"></div>
-            <ul class="post-list list-unstyled">{% for post in site.categories["products"] limit:6 %}
-              <li><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></li>{% endfor %}
-              <li><a data-title="产品中心" href="{{ site.url }}/products/" class="hover-color">更多产品</a></li>
-            </ul>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <ul class="post-list list-unstyled">{% for post in site.categories["products"] limit:5 %}
+                <li><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></li>{% endfor %}
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <ul class="post-list list-unstyled">{% for post in site.categories["products"] reversed limit:4 %}
+                <li><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></li>{% endfor %}
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-btm-20 hidden-xs">
-            <p class="nav-title">新闻中心</p>
-            <div class="yellow-heading"></div>
-            <ul class="post-list list-unstyled">{% for post in site.categories["news"] limit:7 %}
-              <li><a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></li>{% endfor %}
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-btm-20">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 margin-btm-20">
             <p class="nav-title">联系我们</p>
             <div class="yellow-heading"></div>
             <p><i class="fas fa-map-marker-alt"></i> {{ site.address }}</p>
