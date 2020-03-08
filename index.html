@@ -27,7 +27,7 @@ full_title: 金点原子保险柜
 <div class="container hidden-xs hidden-sm">
   <p class="title-3 text-black text-center margin-top-40">新闻中心</p>
   <div class="row margin-top-40">{% for post in site.categories["news"] limit:3 %}
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 margin-btm-20">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 margin-btm-20">
       <div class="news-sec">
         <a data-title="{{ post.title }}" href="{{ site.url }}{{ post.url }}"><mip-img src="{{ site.url }}/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></mip-img></a>
         <div class="news-desc">
