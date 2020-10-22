@@ -12,13 +12,13 @@ layout: default
     <li class="active">{{ page.title }}</li>
   </ol>
 </div>{% if page.layout == 'products-article' %}
-<mip-img src="{{ site.url }}/images/products/bg-{{ page.image }}.jpg" alt="{{ page.title }}"></mip-img>{% endif %}
+<img src="{{ site.url }}/images/products/bg-{{ page.image }}.jpg" class="img-responsive center-block" alt="{{ page.title }}">{% endif %}
 <div class="container margin-top-58">
   {{ content }}
 </div>{% if page.layout == 'products-article' %}
 <div class="bg-dark">
   <div class="container">
-    <mip-img src="{{ site.url }}/images/products/{{ page.image }}-features.jpg" alt="{{ page.title }}"></mip-img>
+    <img src="{{ site.url }}/images/products/{{ page.image }}-features.jpg" class="img-responsive center-block" alt="{{ page.title }}">
   </div>
 </div>
 <div class="container">
